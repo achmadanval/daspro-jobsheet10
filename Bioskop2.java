@@ -17,10 +17,10 @@ public class Bioskop2 {
         System.out.printf("%s \t %s\n",penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n",penonton[3][0], penonton[3][1]);
 
-       System.out.println(penonton.length);
-
-       for (int i = 0; i < penonton.length; i++) {
-            System.out.println("Panjang baris ke-" + (i+1) + ": "+ penonton[i].length);
-       }
+        int jumlahBaris = 0;
+        for (String[] baris : penonton) {
+            jumlahBaris++;
+        }
+        System.out.println("jumlah baris : " + jumlahBaris);
     }
 }
